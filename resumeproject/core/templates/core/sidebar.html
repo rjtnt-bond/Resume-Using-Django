@@ -1,0 +1,16 @@
+{% load static %}
+
+<div class="border-right border-danger h-100">
+    <div class="text-center">
+        <img src="{% static 'core/images/photo2.jpg' %}" alt="Profile Photo" class="img-fluid rounded-circle mt-5"
+            width="100px" height="100px">
+    </div>
+    <h3 class="text-dark mt-3 st-font">Rezwanul Islam</h3>
+    <hr class="border-light">
+    <nav class="nav flex-column text-center">
+        <a href="{% url 'home' %}" class="nav-link text-dark">Home</a>
+        <a href="{% url 'serv' %}" class="nav-link  text-dark">Services</a>
+        <a href="{% url 'skills' %}" class="nav-link text-dark">Skill</a>
+        <a href="{% url 'contact' %}" class="nav-link text-dark">Contact</a>
+    </nav>
+</div>

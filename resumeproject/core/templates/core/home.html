@@ -1,0 +1,31 @@
+
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}
+<title>Home</title>
+{% endblock title %}
+{% block content %}
+<div class="mt-5  text-center">
+<img src="{% static 'core/images/photo2.jpg' %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="150px">
+</div>
+  
+  <div class="text-white">
+    <h1 class="font-weight-bold mt-5 st-font">Hello,</h1>
+    <div class="px-4" style="line-height: 2rem;">
+        <p style="text-indent:100px">I am <b class="text-dark st-font">Bondhon</b>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae est eius iste odit, ex modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, esse perferendis obcaecati dolore quae ex quaerat. In numquam tempore iusto. 
+        Voluptate excepturi dolorem perferendis reprehenderit fuga, eos facilis iure dolore odio deserunt ratione perspiciatis soluta alias distinctio voluptates pariatur repudiandae?
+        </p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, <b class="text-dark">RB technology</b> ipsa perspiciatis nisi consequatur sit veniam ad placeat enim veritatis
+             quos beatae et vitae ea dicta ipsum maxime blanditiis repudiandae sed? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima vitae laborum commodi laboriosam sed facilis dignissimos nesciunt aliquam voluptatem, sint rerum corporis temporibus quidem harum dolorum consequatur numquam odit eveniet! Animi sit recusandae, perferendis praesentium facilis minima perspiciatis suscipit, quod veritatis eius ratione 
+             quidem deleniti.</p> <p>At laudantium voluptatem optio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia sit, maxime velit cum repellendus mollitia quaerat dolorem tenetur, ducimus molestiae? Sint nihil laborum dolor sapiente dolore repudiandae neque ratione ea porro, excepturi maiores facilis veritatis necessitatibus 
+         tenetur dignissimos corporis deserunt at, enim consequuntur, obcaecati optio ut explicabo.</p>
+    </div>
+    <div class="text-center">
+            <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire me</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline-danger my-3">Contact</a>
+    </div>
+
+  </div>
+{% endblock content %}
